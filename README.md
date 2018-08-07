@@ -1,5 +1,6 @@
 # WebsiteInstaller
-Powershell and batch script that install published website files as web application and pool in IIS
+### Script used withing published website directory to install app pool and website in IIS
+----
 
 
 Copy both Install.ps1 and Install.bat into your websites published source files directory.
