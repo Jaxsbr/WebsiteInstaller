@@ -10,6 +10,8 @@
   * iisAppPoolName           -> Name of the app pool used to setup the website/application
   * iisAppPoolDotNetVersion  -> Version of DotNet to configure the app pool under
   * iisAppName               -> Name of the website/application in IIS
+  * hostName                 -> Name used to access the website in browser, defaults to localhost
+  * hostFilePath             -> Location hosts file, used for dns mapping. Only needs to be changed if C:\ drive is not the OS disk
 * Run the Install.bat file as Administrator
 
 
