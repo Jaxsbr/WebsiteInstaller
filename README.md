@@ -3,9 +3,9 @@
 ----
 
 
-* Copy both Install.ps1 and Install.bat into your websites published source files directory.
-  * E.g. C:\myWebApp\Install.ps1   C:\myWebApp\Install.bat
-* Modify the following parameters in the Install.bat file to match the requirements of your website.
+* Copy both _Install.ps1 and _Install.bat into your websites published source files directory.
+  * E.g. C:\myWebApp\_Install.ps1   C:\myWebApp\_Install.bat
+* Modify the following parameters in the _Install.bat file to match the requirements of your website.
   * overwriteIfExist         -> Will overwrite the website currently installed with current files found in the published location
   * iisAppPoolName           -> Name of the app pool used to setup the website/application
   * iisAppPoolDotNetVersion  -> Version of DotNet to configure the app pool under
