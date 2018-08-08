@@ -7,7 +7,8 @@
         [string]$iisAppPoolDotNetVersion = "v4.0",
         [string]$iisAppName = "myWebApp",
         [string]$hostName = "localhost",
-        [string]$hostsFilePath = "C:\Windows\System32\drivers\etc\hosts"
+        [string]$hostsFilePath = "C:\Windows\System32\drivers\etc\hosts",
+        [bool]$autoLaunchOnCompletion = $true
     )
     Process {
         Write-Host "Starting install..." -ForegroundColor Yellow
@@ -62,4 +63,8 @@
         }
 
         Write-Host "Install completed" -ForegroundColor Yellow
+        
+        if ($autoLaunchOnCompletion) {
+            Start-Process -FilePath ("http://{0}/" -f $hostName)
+        }
     }
